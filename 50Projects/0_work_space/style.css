@@ -58,3 +58,24 @@ nav ul li + li + li {
     color: yellow;
     transform: translateX(15%);
 }
+
+
+.image-container {
+    background: #e0e0e0;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+}
+
+/*무슨 차이지?*/
+.image-container .book {
+    background-size: auto 100%;
+    width: 25vw;
+    height: 25vh;
+}
+
+.image-container .food {
+    background: url("./images/food.jpg") no-repeat center center/cover;
+    width: 25vw;
+    height: 25vh;
+}
