@@ -62,6 +62,7 @@ h1 {
     width: 50%;
     height: 100%;
     overflow: hidden;
+    transition: width 0.8s ease;
 }
 
 .split.left {
@@ -100,4 +101,12 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: var(--right-bg-color);
+}
+
+.split.big {
+    width: 70%;
+}
+
+.split.small {
+    width: 30%;
 }
