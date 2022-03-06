@@ -1,20 +1,20 @@
-// const split = document.querySelector('.split')
 const splits = document.querySelectorAll('.split')
 
 splits.forEach(split => {
-    split.addEventListener('mouseover', () => {
+    split.addEventListener('mouseenter', () => {
         split.classList.remove('small')
         split.classList.add('big')
+        splits.forEach(removeSplit => {
+            if (removeSplit !== split) {
+                removeSplit.classList.add('small')
+            }
+        })
     })
 
-    // split.addEventListener('mouseout', () => {
-    //     split.classList.remove('big')
-    //     split.classList.add('small')
-    // })
+    split.addEventListener('mouseleave', () => {
+        splits.forEach(removeSplit => {
+            removeSplit.classList.remove('big')
+            removeSplit.classList.remove('small')
+        })
+    })
 })
-
-// splits.addEventListener('mouseover', () => {
-//     console.log('1')
-// })
-
-// window.addEventListener('ho')

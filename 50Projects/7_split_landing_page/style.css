@@ -84,9 +84,17 @@ h1 {
     border-color: var(--left-btn-hover-color);
 }
 
+.split.left .btn:active {
+    transform: scale(0.98) translateX(-51%);
+}
+
 .split.right .btn:hover {
     background-color: var(--right-btn-hover-color);
     border-color: var(--right-btn-hover-color);
+}
+
+.split.right .btn:active {
+    transform: scale(0.98) translateX(-51%);
 }
 
 .split.right {
