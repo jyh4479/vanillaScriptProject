@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #686de0;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,4 +14,16 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+
+    /* width를 800px를 설정하지만 화면이 800px보다 작아지면 max-width가 100%로 걸려있기 때문에 반응형으로 요소의 width가 작아진다 */
+    max-width: 100%;
+    width: 800px;
 }
