@@ -1,3 +1,5 @@
+// 동작만 보고 작성한 로직
+
 const smallCups = document.querySelectorAll(".cup-small");
 const remained = document.querySelector(".remained");
 const percentage = document.querySelector(".percentage");
@@ -49,4 +51,6 @@ const checkRemained = () => {
     percentage.innerText = getPercentage(cupWaterCount, cupCount) === 0 ? "" : `${getPercentage(cupWaterCount, cupCount)}%`;
     liters.innerText = `${getLiter(cupWaterCount, cupCount)}L`;
 }
+
+// 강의 제공 로직
 
