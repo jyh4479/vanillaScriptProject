@@ -41,10 +41,13 @@ const checkRemained = () => {
         }
     })
 
+    // display none이면 layout이 없어지므로 사용자가 봤을때 물이 자연스럽게 차오르지 않음
+    // visibility를 쓰고 height를 0으로 주면서 물이 자연스럽게 차오르도록 구현
     if (cupCount === cupWaterCount) {
-        remained.style.display = "none";
+        remained.style.visibility = "hidden";
     } else {
-        remained.style.display = "flex";
+        remained.style.visibility = "visible";
+        remained.style.height = '0';
     }
 
     percentage.style.height = `${getPercentage(cupWaterCount, cupCount)}%`;
