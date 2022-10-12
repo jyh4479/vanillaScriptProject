@@ -59,7 +59,6 @@ nav ul li + li + li {
     transform: translateX(15%);
 }
 
-
 .image-container {
     background: #e0e0e0;
     display: flex;
@@ -75,7 +74,7 @@ nav ul li + li + li {
 }
 
 .image-container .food {
-    background: url("./images/food.jpg") no-repeat center center/cover;
+    background: url('./images/food.jpg') no-repeat center center/cover;
     width: 25vw;
     height: 25vh;
 }

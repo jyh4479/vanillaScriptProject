@@ -23,14 +23,13 @@ let load = 0
 //
 // blurring().then(r => r)
 
-
 const blurring = () => {
     load++
     console.log(load)
     if (load >= 100) clearInterval(interval)
 
     bg.style.filter = `blur(${100 - load}px)`
-    loadText.style.opacity = `${1 - (load / 100)}`
+    loadText.style.opacity = `${1 - load / 100}`
 
     loadText.innerHTML = `${load}%`
 }

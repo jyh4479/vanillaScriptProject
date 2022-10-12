@@ -3,7 +3,7 @@
 // }
 
 const main = function () {
-    console.log(arguments);
+    console.log(arguments)
     for (let i = 0; i < arguments.length; i++) {
         arguments[i]()
     }
@@ -17,24 +17,27 @@ const b = () => {
     console.log(200)
 }
 
-main(a, b);
+main(a, b)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function marry(man, woman) {
-    woman.husband = man;
-    man.wife = woman;
+    woman.husband = man
+    man.wife = woman
 
     return {
         father: man,
-        mother: woman
+        mother: woman,
     }
 }
 
-let family = marry({
-    name: "Jhon"
-}, {
-    name: "Ann"
-})
+let family = marry(
+    {
+        name: 'Jhon',
+    },
+    {
+        name: 'Ann',
+    }
+)
 
 console.log(family)

@@ -16,10 +16,10 @@
 // })
 
 // 강의 js 동작
-const toggles = document.querySelectorAll(".faq-toggle");
+const toggles = document.querySelectorAll('.faq-toggle')
 
-toggles.forEach(toggle => {
-    toggle.addEventListener("click", () => {
-        toggle.parentElement.classList.toggle("active");
+toggles.forEach((toggle) => {
+    toggle.addEventListener('click', () => {
+        toggle.parentElement.classList.toggle('active')
     })
 })

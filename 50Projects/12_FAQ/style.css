@@ -44,8 +44,8 @@ h1 {
 
 .faq.active::before,
 .faq.active::after {
-    content: "\f075";
-    font-family: "Font Awesome 5 Free", serif;
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free', serif;
     color: #2ecc71;
     font-size: 7rem;
     position: absolute;
@@ -111,5 +111,4 @@ h1 {
 
 .faq.active .faq-toggle {
     background-color: #9fa4a8;
-
 }
