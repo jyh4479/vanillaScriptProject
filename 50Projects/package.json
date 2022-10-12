@@ -1,0 +1,13 @@
+{
+    "name": "50Projects",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "format": "prettier --check ../50Projects",
+        "format:fix": "prettier --write ../50Projects"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1"
+    }
+}
