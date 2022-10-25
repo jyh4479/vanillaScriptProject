@@ -10,10 +10,20 @@ export const TAB_LIST = `
 export const PRODUCT_MANAGE_TEMPLATE = `
 <div>
 <h2>상품 추가하기</h2>
-<input placeholder="상품"/>
-<input placeholder="가격"/>
-<input placeholder="수량"/>
-<button>추가하기</button>
+<input id="product-name-input" placeholder="상품"/>
+<input id="product-price-input" placeholder="가격"/>
+<input id="product-quantity-input" placeholder="수량"/>
+<button id="product-add-button">추가하기</button>
+<div>
+<h2>상품 현황</h2>
+<table>
+<thead>
+<tr><th>상품명</th><th>가격</th><th>수량</th></tr>
+</thead>
+<tbody id="product-body">
+</tbody>
+</table>
+</div>
 </div>
 `
 export const PRODUCT_PURCHASE_TEMPLATE = `

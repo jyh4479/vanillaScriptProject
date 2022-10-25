@@ -1,13 +1,11 @@
 import {CHANGE_CHARGE_TEMPLATE, PRODUCT_MANAGE_TEMPLATE, PRODUCT_PURCHASE_TEMPLATE, TAB_LIST} from "./viewTemplate";
-import {clearChildElement, stringToHTML} from "../util/Dom.js";
+import {clearChildElement, stringToHTML, stringToTableHTML} from "../util/Dom.js";
 
 export default class View {
     $header;
     $body;
 
     constructor() {
-        // this.header = TAB_LIST;
-        // this.body = PRODUCT_MANAGE_TEMPLATE;
     }
 
     init() {
@@ -45,5 +43,16 @@ export default class View {
     getChangeChargeTemplate() {
         clearChildElement(this.$body);
         this.$body.appendChild(stringToHTML(CHANGE_CHARGE_TEMPLATE));
+    }
+
+    /* ------------------------------------------------------------ */
+
+    getItemListView(itemList) {
+        const $tableBody = document.getElementById("product-body");
+        clearChildElement($tableBody);
+
+        itemList.forEach(item => {
+            $tableBody.appendChild(stringToTableHTML(`<td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td>`));
+        })
     }
 }
